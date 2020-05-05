@@ -1,0 +1,65 @@
+{% extends "layout.njk" %}
+
+
+{% block head %}
+
+<title>recipe</title> 
+
+{% endblock head%}
+
+
+{% block main %}
+
+<section id="recipedetails-intro">
+    <a><img src="{{ recipe.image }}" alt="{{ recipe.title }} Image"></a>
+    <h3>{{ recipe.title }}</h3>
+    <p>por {{ recipe.author }}</p>
+</section>
+
+<section id="recipedetails-info">
+    <div class="info-container">
+        <nav class="info-navigator">
+            <h2>Ingredientes</h2>
+            <a class='button-hide'>ESCONDER</a>
+            <a class='button-show'></a>  
+        </nav>
+        <ul class="details">
+            {% for ingredient in recipe.ingredients %}
+
+            <li> {{ ingredient }} </li>
+
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="info-container">
+        <nav class="info-navigator">
+            <h2>Modo de preparo</h2>
+            <a class='button-hide'>ESCONDER</a>
+            <a class='button-show'></a>   
+        </nav>
+        <ol class="details">
+            {% for step in recipe.preparation %}
+            
+            <li> {{ step }} </li>
+            
+            {% endfor %}
+        </ol>
+    </div>
+    <div class="info-container">
+        <nav class="info-navigator">
+            <h2>Informações adicionais</h2>
+            <a class='button-hide'>ESCONDER</a>
+            <a class='button-show'></a>   
+        </nav>
+        <p class="details"> {{ recipe.information }} </p>
+    </div>
+</section>
+
+{% endblock main %}
+
+
+{% block scripts %}
+
+    <script src="/scripts.js"></script>
+
+{% endblock scripts %} 

@@ -1,0 +1,209 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+
+
+/* Layout */
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #111111;
+}
+
+header {
+    margin: 30px auto 0px;
+    max-width: 940px;
+    display: flex;
+}
+
+header a {
+    text-decoration: initial;
+    font-size: 16px;
+    padding-right: 30px;
+}
+
+header a:active {
+    font-weight: bold;
+}
+
+header a img {
+    padding-right: 120px;
+}
+
+main{
+    margin: 50px auto;
+    max-width: 940px;
+}
+
+footer{
+    background-color: #EEEEEE;
+    margin: 0 auto;
+    max-width: 1400px;
+    color: #999999;
+    size: 14px;
+    text-align: center;
+    line-height: 62px;
+}
+
+
+/* About */
+
+#about-container h1{
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#about-container h2{
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#about-container p{
+    padding-bottom: 30px;
+    font-size: 18px;
+    color: #444444;
+    width: 940px;
+    text-align: justify;
+    line-height: 28px;
+}
+
+
+/* Home Intro */
+
+#intro-container {
+    margin: -20px 0 50px;
+    background-color: #FBDFDB;
+    height: 366px;
+    width: 940px;
+    border-radius: 30px;
+    position: relative;
+}
+
+#intro-container div {
+    position: absolute;
+    left: 60px;
+    top: 117px;
+}
+
+#intro-container div h1{
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#intro-container div p{
+    font-size: 18px;
+    opacity: 70%;
+    height: 84px;
+    text-align: justify;
+    width: 316px;
+    color: #000000;
+}
+
+#intro-container img {
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+#recipeslist-title {
+    size: 24px;
+    padding-bottom: 20px;
+}
+
+
+/* Recipes List */
+
+.recipeslist-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px 20px;
+    width: 940px; 
+}
+
+.recipeslist-container a img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+}
+
+.recipeslist-container h3 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 18px;    
+}
+
+.recipeslist-container p {
+    color: #777777;
+    font-size: 14px;    
+}
+
+
+/* Recipe Details */
+
+#recipedetails-intro {
+    padding-bottom: 50px;
+}
+
+#recipedetails-intro a img {
+    width: 940px;
+    height: 280px;
+    border-radius: 15px;
+}
+
+#recipedetails-intro h3 {
+    padding-top: 50px;
+    padding-bottom: 4px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#recipedetails-intro p {
+    color: #777777;
+    font-size: 20px;
+    text-align: center;
+}
+
+#recipedetails-info div nav {
+    padding-bottom: 20px;
+    height: 28px;
+    display: flex;
+}
+
+#recipedetails-info div nav h2 {
+    font-weight: bold;
+    size: 24px;
+    padding-right: 8px;
+}
+
+#recipedetails-info div nav a {
+    color: #999999;
+    size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+#recipedetails-info div p, li{
+    size: 18px;
+    color: #444444;
+    line-height: 28px;
+    text-align: justify;
+    list-style-position: inside;
+}
+
+#recipedetails-info div ul, ol{
+    padding-bottom: 40px;
+}
+
+.details.hide {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
